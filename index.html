@@ -1,539 +1,1494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <title>Your Page</title>
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <title>Your Page</title>
+    <style>
       .tab-btn {
         padding: 8px 22px;
         border: none;
         cursor: pointer;
-    }
-    .tab-btn.active {
-        background-color:#f7fafc;
-    }
-  </style>
-</head>
-<body class="bg-gray-100 font-sans">
-
-  <div class="w-9/12 mx-auto mt-8 bg-white shadow-md overflow-hidden rounded-md border-gray-200">
-    <div class="p-0 flex align-center justify-between border-b">
-      <button class="tab-btn" onclick="openTab('tab0')" >Cover Sheet</button>
-      <button class="tab-btn" onclick="openTab('tab1')" >Fence</button>
-      <button class="tab-btn" onclick="openTab('tab2')" >NLS Lighting</button>
-      <button class="tab-btn" onclick="openTab('tab3')" >Agile Warehouse</button>
-      <button class="tab-btn" onclick="openTab('tab4')" >APT Polymer</button>
-      <button class="tab-btn" onclick="openTab('tab5')" >Surface Prep Supply</button>
-      <button class="tab-btn" onclick="openTab('tab6')" >Putterman Athletic</button>
-      <button class="tab-btn" onclick="openTab('tab7')" >Probounce</button>
-  </div>
- 
-<form id="tab0" class="container p-4">
-   <div class="mb-4">
-      <label for="name" class="text-gray-700 text-sm">Customer:</label>
-      <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded">
-    </div>
-   
-    <div class="flex items-center w-full">
-      <!-- Email -->
-      <div class="mb-4 flex-1 mr-4">
-          <label for="email" class="text-gray-700 text-sm" >Email:</label>
-          <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded">
+      }
+      .tab-btn.active {
+        background-color: #f7fafc;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div
+      class="w-9/12 mx-auto mt-8 bg-white shadow-md overflow-hidden rounded-md border-gray-200"
+    >
+      <div class="p-0 flex align-center justify-between border-b">
+        <button class="tab-btn" onclick="openTab('tab0')">Cover Sheet</button>
+        <button class="tab-btn" onclick="openTab('tab1')">Fence</button>
+        <button class="tab-btn" onclick="openTab('tab2')">NLS Lighting</button>
+        <button class="tab-btn" onclick="openTab('tab3')">
+          Agile Warehouse
+        </button>
+        <button class="tab-btn" onclick="openTab('tab4')">APT Polymer</button>
+        <button class="tab-btn" onclick="openTab('tab5')">
+          Surface Prep Supply
+        </button>
+        <button class="tab-btn" onclick="openTab('tab6')">
+          Putterman Athletic
+        </button>
+        <button class="tab-btn" onclick="openTab('tab7')">Probounce</button>
       </div>
 
-      <!-- Phone -->
-      <div class="mb-4 flex-1">
-          <label for="phone" class="text-gray-700 text-sm" >Phone:</label>
-          <input type="tel" id="phone" name="phone" class="mt-1 p-2 w-full border rounded">
-      </div>
-  </div>
-
-  <div class="flex items-center w-full">
-    <div class="mb-4 flex-1 mr-4">
-        <label for="job" class="text-gray-700 text-sm" >Job:</label>
-        <input type="text" id="job" name="job" class="mt-1 p-2 w-full border rounded">
-    </div>
-
-    <!-- Phone -->
-    <div class="mb-4 flex-1">
-        <label for="date" class="text-gray-700 text-sm" >Date:</label>
-        <input type="date" id="date" name="date" class="mt-1 p-2 w-full border rounded">
-    </div>
-</div>
-
-      <!-- Address -->
-      <div class="mb-4">
-        <label for="address" class="text-gray-700 text-sm" >Address:</label>
-        <input type="text" id="address" name="address" class="mt-1 p-2 w-full border rounded">
-      </div>
-
-
-      <div class="flex items-center w-full">
-        <div class="mb-4 flex-1 mr-4">
-          <label for="deliverTo" class="text-gray-700 text-sm" >Deliver To:</label>
-          <textarea id="deliverTo" name="deliverTo" rows="5" class="mt-1 p-2 w-full border rounded"></textarea>
+      <form id="tab0" class="container p-4">
+        <div class="mb-4">
+          <label for="name" class="text-gray-700 text-sm">Customer:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="mt-1 p-2 w-full border rounded"
+          />
         </div>
-  
-        <!-- Phone -->
-        <div class="mb-4 flex-1">
-          <label for="markAs" class="text-gray-700 text-sm" >Mark As:</label>
-          <textarea id="markAs" name="markAs" rows="5" class="mt-1 p-2 w-full border rounded"></textarea>
+
+        <div class="flex items-center w-full">
+          <div class="mb-4 flex-1 mr-4">
+            <label for="email" class="text-gray-700 text-sm">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="mt-1 p-2 w-full border rounded"
+            />
+          </div>
+
+          <div class="mb-4 flex-1">
+            <label for="phone" class="text-gray-700 text-sm">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="mt-1 p-2 w-full border rounded"
+            />
+          </div>
         </div>
+
+        <div class="flex items-center w-full">
+          <div class="mb-4 flex-1 mr-4">
+            <label for="job" class="text-gray-700 text-sm">Job:</label>
+            <input
+              type="text"
+              id="job"
+              name="job"
+              class="mt-1 p-2 w-full border rounded"
+            />
+          </div>
+
+          <div class="mb-4 flex-1">
+            <label for="date" class="text-gray-700 text-sm">Date:</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="mt-1 p-2 w-full border rounded"
+            />
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="address" class="text-gray-700 text-sm">Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            class="mt-1 p-2 w-full border rounded"
+          />
+        </div>
+
+        <div class="flex items-center w-full">
+          <div class="mb-4 flex-1 mr-4">
+            <label for="deliverTo" class="text-gray-700 text-sm"
+              >Deliver To:</label
+            >
+            <textarea
+              id="deliverTo"
+              name="deliverTo"
+              rows="5"
+              class="mt-1 p-2 w-full border rounded"
+            ></textarea>
+          </div>
+
+          <div class="mb-4 flex-1">
+            <label for="markAs" class="text-gray-700 text-sm">Mark As:</label>
+            <textarea
+              id="markAs"
+              name="markAs"
+              rows="5"
+              class="mt-1 p-2 w-full border rounded"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+
+      <div id="tab1" class="hidden p-4">
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Quantity
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Materials
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Info
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Unit
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Price
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                SubTotal
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                Total
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="tab2" class="hidden p-4">
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Quantity
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Materials
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Notes
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Gallons
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Unit Price
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                SubTotal
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                Total
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="tab3" class="hidden p-4">
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Quantity
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Materials
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Notes
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Gallons
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Unit Price
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                SubTotal
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                Total
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="tab4" class="hidden p-4">
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Quantity
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Materials
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Notes
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Gallons
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Unit Price
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                SubTotal
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                Total
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="tab5" class="hidden p-4">
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Quantity
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Materials
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Additional Info
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Bags
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Unit Price
+              </th>
+              <th
+                class="py-2 bg-white border-b text-gray-700 text-sm text-left font-normal"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                SubTotal
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                Total
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="tab6" class="hidden p-4">
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Quantity
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Materials
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Color
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Material
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Unit Price
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                SubTotal
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                Total
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="tab7" class="hidden p-4">
+        <table class="min-w-full bg-white">
+          <thead>
+            <tr>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Quantity
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Materials
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Additional Info
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Bags
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Unit Price
+              </th>
+              <th
+                class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left"
+              >
+                Amount
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Wood
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                Description
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-b text-sm"
+              >
+                sq ft
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                />
+              </td>
+              <td class="py-2 pl-2 w-64 border-b">
+                <input
+                  type="number"
+                  class="w-2/4 focus:outline-none text-left"
+                  readonly
+                  placeholder="77"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                SubTotal
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+
+            <tr>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td class="py-2 text-left w-64 text-gray-700"></td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                Total
+              </td>
+              <td
+                class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b"
+              >
+                12000
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
-</form>
-
-<div id="tab1" class="hidden p-4">
-    <table class="min-w-full bg-white ">
-        <thead>
-        <tr>
-            <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Quantity</th>
-            <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Materials</th>
-            <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Info</th>
-            <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Unit</th>
-            <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Price</th>
-            <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Amount</th>
-        </tr>
-        </thead>
-        <tbody>
-
-        <tr>
-          <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left" /></td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-            <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-            <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-        </tr>
-
-        <tr>
-          <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-            <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-            <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-        </tr>
-
-        <tr>
-          <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-            <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-            <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-            <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-        </tr>
-
-        <tr>
-          <td class="py-2 text-left w-64 text-gray-700  "> </td>
-          <td class="py-2 text-left w-64 text-gray-700  "> </td>
-          <td class="py-2 text-left w-64 text-gray-700  "> </td>
-          <td class="py-2 text-left w-64 text-gray-700  "> </td>
-          <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">SubTotal</td>
-          <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-      </tr>
-
-      <tr>
-        <td class="py-2 text-left w-64 text-gray-700  "> </td>
-        <td class="py-2 text-left w-64 text-gray-700 "> </td>
-        <td class="py-2 text-left w-64 text-gray-700 "> </td>
-        <td class="py-2 text-left w-64 text-gray-700 "> </td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l  border-b">Total</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-    </tr>  
-        </tbody>
-    </table>
-</div>
-
-<div id="tab2" class="hidden p-4">
-
-<table class="min-w-full bg-white ">
-  <thead>
-  <tr>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Quantity</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Materials</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Notes</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Gallons</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Unit Price</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Amount</th>
-  </tr>
-  </thead>
-  <tbody>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /> </td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /> </td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /> </td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /> </td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /> </td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /> </td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /> </td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /> </td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /> </td>
-    </tr>
-
-    <tr>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">SubTotal</td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-  </tr>
-
-  <tr>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l  border-b">Total</td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-</tr>  
-    </tbody>
-</table>
-</div>
-
-<div id="tab3" class="hidden p-4"> 
-<table class="min-w-full bg-white ">
-  <thead>
-  <tr>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Quantity</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Materials</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Notes</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Gallons</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Unit Price</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Amount</th>
-  </tr>
-  </thead>
-  <tbody>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">SubTotal</td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-  </tr>
-
-  <tr>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l  border-b">Total</td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-</tr>  
-    </tbody>
-</table>
-</div>
-
-<div id="tab4" class="hidden p-4"> 
-<table class="min-w-full bg-white">
-  <thead>
-  <tr>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Quantity</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Materials</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Notes</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Gallons</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Unit Price</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Amount</th>
-  </tr>
-  </thead>
-  <tbody>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">SubTotal</td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-  </tr>
-
-  <tr>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l  border-b">Total</td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-</tr>  
-    </tbody>
-</table>
-</div>
-
-<div id="tab5" class="hidden p-4">
-
-<table class="min-w-full bg-white ">
-  <thead>
-  <tr>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Quantity</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Materials</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Additional Info</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Bags</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Unit Price</th>
-      <th class="py-2 bg-white border-b text-gray-700  text-sm text-left font-normal">Amount</th>
-  </tr>
-  </thead>
-  <tbody>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">SubTotal</td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-  </tr>
-
-  <tr>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l  border-b">Total</td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-</tr>  
-    </tbody>
-</table>
-</div>
-
-<div id="tab6" class="hidden p-4">
-
-<table class="min-w-full bg-white ">
-  <thead>
-  <tr>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Quantity</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Materials</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Color</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Material</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Unit Price</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Amount</th>
-  </tr>
-  </thead>
-  <tbody>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">SubTotal</td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-  </tr>
-
-  <tr>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l  border-b">Total</td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-</tr>  
-    </tbody>
-</table>
-</div>
-
-<div id="tab7" class="hidden p-4">
-
-<table class="min-w-full bg-white ">
-  <thead>
-  <tr>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Quantity</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Materials</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Additional Info</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Bags</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Unit Price</th>
-      <th class="py-2 pl-2 bg-white border-b text-gray-700 font-normal text-sm text-left">Amount</th>
-  </tr>
-  </thead>
-  <tbody>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Wood</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >Description</td>
-        <td class="py-2 pl-2 text-left w-64 text-gray-700  border-b text-sm" >sq ft</td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " /></td>
-        <td class="py-2 pl-2 w-64  border-b"><input type="number" class="w-2/4 focus:outline-none text-left " readonly placeholder="77" /></td>
-    </tr>
-
-    <tr>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 text-left w-64 text-gray-700 "> </td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">SubTotal</td>
-      <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-  </tr>
-
-  <tr>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 text-left w-64 text-gray-700 "> </td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l  border-b">Total</td>
-    <td class="py-2 pl-2 text-left w-64 text-gray-700 border-l border-b">12000</td>
-</tr>  
-    </tbody>
-</table>
-</div>
-  </div>
-
-
-
-    
-
-
-
-    
-
-
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
